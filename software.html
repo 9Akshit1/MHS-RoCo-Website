@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Team</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .fade-element {
+            opacity: 0;
+            transition: opacity 0.7s ease-in-out;
+        }
+
+        .fade-element.fade-in {
+            opacity: 1;
+            animation: fadeIn 0.7s ease-in-out forwards;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            padding: 10px 30px;
+            transition: background-color 0.3s ease;
+            justify-content: flex-start;
+            background-color: transparent;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-logo {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+        }
+
+        .nav-name {
+            color: white;
+            font-size: 22px;
+            margin-left: 15px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: #ecf0f1;
+            text-decoration: none;
+            margin-left: 100px;
+            margin-right: 15px;
+            font-size: 1.1rem;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .subteams-link {
+            margin-right: 20px;
+            padding: 5px 10px;
+            background-color: #55DBF2;
+            border-radius: 5px;
+            transition: background-color 1s ease;
+        }
+
+        .subteams-link:hover {
+            background-color: #3992a2;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@300;400;700&display=swap');
+
+        .typing-container {
+            padding-top: 50px;
+            padding-bottom: 30px;
+            width: 100%;
+            height: 310px;
+            background-image: url('images/computer_bg.jpg');
+            background-size: cover;
+            background-position: bottom center;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            font-size: 40px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .static-text {
+            color: blue;
+        }
+
+        .dynamic-text {
+            color: green;
+        }
+
+        /* What We Do Section */
+        .what-we-do {
+            display: flex;
+            align-items: center;
+            padding: 50px;
+            background-color: #f4f4f4;
+        }
+
+        .what-we-do img {
+            max-width: 400px;
+            margin-right: 50px;
+            border-radius: 10px;
+        }
+
+        .what-we-do p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        /* Our Work Section */
+        .our-work {
+            padding: 50px;
+            background-color: #e6f2ff;
+            text-align: center;
+        }
+
+        .our-work h2 {
+            font-family: 'Lato', sans-serif;
+            font-size: 3rem;
+            color: black;
+            margin-bottom: 40px;
+        }
+
+        .work-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .work-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .work-item img {
+            max-width: 100%;
+            height: 300px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .work-item p {
+            font-size: 1rem;
+            color: #333;
+        }
+
+
+        /* Footer */
+        footer {
+            width: 100%;
+            height: 114px;
+            background-color: #D6E5F5;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            padding-right: 30px;
+        }
+
+        footer p {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+            padding: 0 10px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 30px;
+        }
+
+        .social-icon {
+            width: 30px;
+            height: 30px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+
+        .instagram {
+            background-image: url('images/instagram.png');
+            transition: transform 0.3s ease;
+        }
+
+        .instagram:hover {
+            transform: scale(1.3);
+        }
+
+        .gmail {
+            background-image: url('images/gmail.png');
+            transition: transform 0.3s ease;
+        }
+
+        .gmail:hover {
+            transform: scale(1.3);
+        }
+
+        .hands {
+            background-image: url('images/hands.png');
+            transition: transform 0.3s ease;
+        }
+
+        .hands:hover {
+            transform: scale(1.3);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav id="navbar">
+            <img src="images/logo.png" alt="Logo" class="nav-logo">
+            <span class="nav-name">MHS RoCo</span>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <a href="#" class="subteams-link">Subteams</a>
+                    <div class="dropdown-content">
+                        <a href="software.html">Software Team</a>
+                        <a href="hardware.html">Hardware Team</a>
+                        <a href="outreach.html">Outreach Team</a>
+                    </div>
+                </div>
+                <a href="join.html">Join Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="typing-container fade-element">
+        <span class="static-text">print(</span><span class="dynamic-text">"</span><span id="dynamic-text"></span><span
+            class="dynamic-text">")</span>
+    </div>
+
+    <!-- What We Do Section -->
+    <section class="what-we-do fade-element">
+        <img src="images/software_team.jpg" alt="Software Team">
+        <div>
+            <h2>What We Do</h2>
+            <p>The software subteam at MHS RoCo Club a critical role in designing and implementing the control systems
+                for the robot. One of the key tools that this subteam may use is WPIlib, a software library developed by
+                Worcester Polytechnic Institute (WPI) for use in the FIRST Robotics Competition. WPIlib provides a wide
+                range of functionality for controlling the robot's motors, sensors, and other devices, as well as for
+                developing user interfaces and other software components.</p>
+            <p>The software subteam is responsible for creating the code that tells the robot what to do and how to
+                respond to different situations. This requires a deep understanding of the robot's hardware, as well as
+                the rules of the competition and the strategies the team wants to employ. The subteam members will
+                collaborate closely with the mechanical subteam, using WPIlib to develop the software that controls the
+                robot's various subsystems. They will also spend a lot of time testing and refining their code, to
+                ensure that the robot performs well on the field.</p>
+        </div>
+    </section>
+
+    <section class="our-work fade-element">
+        <h2>Our Work</h2>
+        <div class="work-grid">
+            <div class="work-item">
+                <img src="images/pablo.png" alt="Project 1">
+                <p>FRC Robot - A collective project done by the subteams for the FIRST Robotics Competition.</p>
+            </div>
+            <div class="work-item">
+                <img src="images/carjacking_cam.jfif" alt="Project 2">
+                <p>Carjacking Tracker Software - Implementing computer vision techniques to track stolen cars and
+                    contact police/user early.</p>
+            </div>
+            <div class="work-item">
+                <img src="images/EduPiano.jfif" alt="Project 3">
+                <p>EduPiano - A hackathon submission that helps pianists play with the correct finger positions from
+                    just sheet music.</p>
+            </div>
+            <div class="work-item">
+                <img src="images/robotsimulation.png" alt="Project 4">
+                <p>Robot Simulation - Robot Simulation allows the software team to test out software without having the
+                    physical robot on hand.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Check out our social media!</p>
+        <div class="social-icons">
+            <a href="#" class="social-icon instagram"></a>
+            <a href="#" class="social-icon gmail"></a>
+            <a href="#" class="social-icon hands"></a>
+        </div>
+    </footer>
+
+    <script>
+        window.onscroll = function () {
+            var navbar = document.getElementById("navbar");
+            if (window.pageYOffset > 50) {
+                navbar.style.backgroundColor = "black";
+            } else {
+                navbar.style.backgroundColor = "transparent";
+            }
+        };
+        document.addEventListener("DOMContentLoaded", function () {
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            });
+
+            const elementsToFade = document.querySelectorAll('.fade-element');
+
+            elementsToFade.forEach(element => {
+                observer.observe(element);
+            });
+        });
+        const text = "We are Software.";
+        let index = 0;
+        let typing = true;
+
+        function typeText() {
+            const dynamicTextElement = document.getElementById("dynamic-text");
+
+            if (typing) {
+                if (index < text.length) {
+                    dynamicTextElement.textContent += text.charAt(index);
+                    index++;
+                    setTimeout(typeText, 100);
+                } else {
+                    typing = false;
+                    setTimeout(typeText, 2000);
+                }
+            } else {
+                if (index > 0) {
+                    dynamicTextElement.textContent = text.substring(0, index - 1);
+                    index--;
+                    setTimeout(typeText, 100);
+                } else {
+                    typing = true;
+                    setTimeout(typeText, 1000);
+                }
+            }
+        }
+
+        window.onload = function () {
+            typeText();
+        };
+    </script>
+
+</body>
+
+</html>

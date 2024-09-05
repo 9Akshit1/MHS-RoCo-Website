@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardware Team</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .fade-element {
+            opacity: 0;
+            transition: opacity 0.7s ease-in-out;
+        }
+
+        .fade-element.fade-in {
+            opacity: 1;
+            animation: fadeIn 0.7s ease-in-out forwards;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            padding: 10px 30px;
+            transition: background-color 0.3s ease;
+            justify-content: flex-start;
+            background-color: transparent;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-logo {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+        }
+
+        .nav-name {
+            color: white;
+            font-size: 22px;
+            margin-left: 15px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: #ecf0f1;
+            text-decoration: none;
+            margin-left: 100px;
+            margin-right: 15px;
+            font-size: 1.1rem;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .subteams-link {
+            margin-right: 20px;
+            padding: 5px 10px;
+            background-color: #55DBF2;
+            border-radius: 5px;
+            transition: background-color 1s ease;
+        }
+
+        .subteams-link:hover {
+            background-color: #3992a2;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@300;400;700&display=swap');
+
+
+        /* Title Section */
+        .title-section {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            width: 100%;
+            height: 310px;
+            background-image: url('images/tools_bg.jpg');
+            background-size: cover;
+            background-position: bottom center;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Inter', sans-serif;
+            font-size: 40px;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid green;
+        }
+
+        .title-text {
+            margin-top: 60px;
+            margin-left: 40px;
+            font-family: 'Inter', sans-serif;
+            font-size: 60px;
+            font-weight: bold;
+            line-height: 1.2;
+            text-align: left;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .title-text .line {
+            color: white;
+            display: block;
+        }
+
+        .title-text .gradient-text {
+            margin-left: 15px;
+            background: linear-gradient(90deg, #ff7e5f, #feb47b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            display: inline-block;
+            white-space: nowrap;
+        }
+
+        .content-section {
+            margin-left: 40px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-top: 20px;
+            width: 300px
+        }
+
+        .content-section .description {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: white;
+            width: 300px;
+        }
+
+        .content-section .images {
+            margin-left: 690px;
+            margin-top: -120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            position: relative;
+        }
+
+        .content-section .images img {
+            border-radius: 10px;
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+
+        /* What We Do Section */
+        .what-we-do {
+            display: flex;
+            align-items: center;
+            padding: 50px;
+            background-color: #f4f4f4;
+            color: white;
+        }
+
+        .what-we-do img {
+            max-width: 300px;
+            border-radius: 10px;
+            margin-right: 40px;
+        }
+
+        .what-we-do h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .what-we-do p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .text-container {
+            max-width: 700px;
+            overflow: hidden;
+            color: black;
+        }
+
+        .typing {
+            color: black;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid green;
+            width: 0;
+            animation: typing 4s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
+            font-size: 1.2rem;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent;
+            }
+
+            50% {
+                border-color: green;
+            }
+        }
+
+        /* Our Work Section */
+        .our-work {
+            padding: 50px;
+            background-color: #e6f2ff;
+            text-align: center;
+        }
+
+        .our-work h2 {
+            font-family: 'Lato', sans-serif;
+            font-size: 3rem;
+            color: black;
+            margin-bottom: 40px;
+        }
+
+        /* Work Grid */
+        .work-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        /* Work Item */
+        .work-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .work-item img {
+            max-width: 100%;
+            height: 300px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .work-item p {
+            font-size: 1rem;
+            color: #333;
+        }
+
+
+        /* Footer */
+        footer {
+            width: 100%;
+            height: 114px;
+            background-color: #D6E5F5;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            padding-right: 30px;
+        }
+
+        footer p {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+            padding: 0 10px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 30px;
+        }
+
+        .social-icon {
+            width: 30px;
+            height: 30px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+
+        .instagram {
+            background-image: url('images/instagram.png');
+            transition: transform 0.3s ease;
+        }
+
+        .instagram:hover {
+            transform: scale(1.3);
+        }
+
+        .gmail {
+            background-image: url('images/gmail.png');
+            transition: transform 0.3s ease;
+        }
+
+        .gmail:hover {
+            transform: scale(1.3);
+        }
+
+        .hands {
+            background-image: url('images/hands.png');
+            transition: transform 0.3s ease;
+        }
+
+        .hands:hover {
+            transform: scale(1.3);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav id="navbar">
+            <img src="images/logo.png" alt="Logo" class="nav-logo">
+            <span class="nav-name">MHS RoCo</span>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <a href="#" class="subteams-link">Subteams</a>
+                    <div class="dropdown-content">
+                        <a href="software.html">Software Team</a>
+                        <a href="hardware.html">Hardware Team</a>
+                        <a href="outreach.html">Outreach Team</a>
+                    </div>
+                </div>
+                <a href="join.html">Join Us</a>
+            </div>
+        </nav>
+    </header>
+
+    </div><!-- Title Section -->
+    <section class="title-section">
+        <div class="title-text">
+            <span class="line">We are</span>
+            <span class="line gradient-text">Mechanical</span>
+        </div>
+        <div class="content-section">
+            <div class="description">
+                <p>The Mechanical Team at MHS RoCo designs, builds, and maintains the physical components of our robots.
+                </p>
+                <p>Our team focuses on innovation, precision, and durability to ensure our robots are competition-ready.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Do Section -->
+    <section class="what-we-do fade-element">
+        <img src="images/hardware_team.jpg" alt="Hardware Team">
+        <div class="text-container">
+            <h2>What We Do</h2>
+            <p>The mechanical subteam is a subteam devoted to the building of the robot. The mechanical subteam performs
+                all tasks and duties in regards to the general creation of the parts used in prototyping and final
+                models of the machine. The manufactured parts demands diligence and precision, thus requiring each of
+                the members to hold a high standard of work. Members work mainly with powered tools (saws, drills, CNC,
+                etc...) to cut and assemble metal and other materials, which are important for prototyping or field
+                materials.</p>
+        </div>
+    </section>
+
+    <section class="our-work fade-element">
+        <h2>Our Work</h2>
+        <div class="work-grid">
+            <div class="work-item">
+                <img src="images/pablo.png" alt="Project 1">
+                <p>FRC Robot - A collective project done by the subteams for the FIRST Robotics Competition.</p>
+            </div>
+            <div class="work-item">
+                <img src="images/ABRR.jfif" alt="Project 2">
+                <p>Algal Bloom Robot - A robot that clears and prevents algal blooms. Still in designing stage.</p>
+            </div>
+            <div class="work-item">
+                <img src="images/surgestitch.jpg" alt="Project 3">
+                <p>SurgeStitch - A hackathon submission that stitches up wounds/gashes quickly without a doctor or long
+                    wait-times.</p>
+            </div>
+            <div class="work-item">
+                <img src="images/cad-practise.png" alt="Project 4">
+                <p>CAD Teaching - The hardware team regularly teaches members about CAD and other important
+                    hardware/elecrical related info.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Check out our social media!</p>
+        <div class="social-icons">
+            <a href="#" class="social-icon instagram"></a>
+            <a href="#" class="social-icon gmail"></a>
+            <a href="#" class="social-icon hands"></a>
+        </div>
+    </footer>
+
+    <script>
+        window.onscroll = function () {
+            var navbar = document.getElementById("navbar");
+            if (window.pageYOffset > 50) {
+                navbar.style.backgroundColor = "black";
+            } else {
+                navbar.style.backgroundColor = "transparent";
+            }
+        };
+        document.addEventListener("DOMContentLoaded", function () {
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            });
+
+            const elementsToFade = document.querySelectorAll('.fade-element');
+
+            elementsToFade.forEach(element => {
+                observer.observe(element);
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            const titleText = document.querySelectorAll(".title-text .line");
+            let delay = 0;
+
+            titleText.forEach((line) => {
+                line.style.opacity = 0;
+                line.style.transform = "translateY(50px)";
+                line.style.transition = `all 0.5s ease ${delay}s`;
+                delay += 0.2;
+            });
+
+            setTimeout(() => {
+                titleText.forEach((line) => {
+                    line.style.opacity = 1;
+                    line.style.transform = "translateY(0)";
+                });
+            }, 100);
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            const text = "The mechanical subteam is a subteam devoted to the building of the robot. The mechanical subteam performs all tasks and duties in regards to the general creation of the parts used in prototyping and final models of the machine. The manufactured parts demand diligence and precision, thus requiring each of the members to hold a high standard of work. Members work mainly with powered tools (saws, drills, CNC, etc...) to cut and assemble metal and other materials, which are important for prototyping or field materials.";
+            const typedTextElement = document.getElementById("typed-text");
+            let index = 0;
+
+            function type() {
+                if (index < text.length) {
+                    typedTextElement.textContent += text.charAt(index);
+                    index++;
+                    setTimeout(type, 50);
+                } else {
+                    setTimeout(erase, 2000);
+                }
+            }
+
+            function erase() {
+                if (index > 0) {
+                    typedTextElement.textContent = typedTextElement.textContent.slice(0, -1);
+                    index--;
+                    setTimeout(erase, 50);
+                } else {
+                    setTimeout(() => {
+                        index = 0;
+                        type();
+                    }, 1000);
+                }
+            }
+
+            type();
+        });
+    </script>
+
+</body>
+
+</html>

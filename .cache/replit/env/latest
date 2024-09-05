@@ -1,0 +1,53 @@
+declare -gx NIX_PROFILES='/nix/var/nix/profiles/default /home/runner/.nix-profile'
+declare -gx DISPLAY=:0
+declare -gx SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
+declare -gx REPL_SLUG=Hackathon-Website
+declare -gx GIT_EDITOR=replit-git-editor
+declare -gx REPL_IMAGE=gcr.io/marine-cycle-160323/nix:bf8590a3e2f0a8b70b7ca175eeed9074dffbfca9
+declare -gx REPL_IDENTITY=v2.public.Q2lSaVkyVm1NV1F5TnkxbE9XTXpMVFExTlRRdE9EaGtaQzB3WmpjNVpUVTFZamRtWVdJU0RrRkxVMGhKVkVWU1ZVdFZURXhCR2hGSVlXTnJZWFJvYjI0dFYyVmljMmwwWlNJa1ltTmxaakZrTWpjdFpUbGpNeTAwTlRVMExUZzRaR1F0TUdZM09XVTFOV0kzWm1GaU9MeTBnUWhhRXdvRWQyOXlaaElMYVc1MFpYSmhZM1JwZG1VPV5ixhcIRZw0z8wOGzNPJe8VqrM8_P2sByheClmU42s7BFB7MryygXiskhBcU9XYU5UzlAN6ptDCUkPZHw_nPAg.R0FFaUJtTnZibTFoYmhLV0NIWXlMbkIxWW14cFl5NVJNbVI2VTFob2JGVkhjREJhTVd4U1QwZFpjbFZWU2xOVFZYaEVVMnhTV2s1cVpGcFNNRlpLVFd0V2NsVldWbWhSVjJodVVtdGtjRmRWZEV0U01IQnhWMnhrV21WR2NFVlRWRTVOVmpGVk1WZFljRTVrUlRWRlZsUkdUMUY2UVRCVU1HUlRZVEI0VlZGdE1VOWxiWGh6Vkd4U1YyRlZOSGxYYldoYVlVYzVVbEpYWXpGUmJFMTRWR3RzVkZac1NrZFdWM2hYVkVaYVZtVkZNVkpWYlRsSFZEQjROVTFIWkZKYU1rWkRZVlZzUmxwRVNUVmxWbkJ2WWpBMVRGb3pVbmRaYlRWVFlrZE9kRkp0Y0d0U01uZDVWMnhPU2sxWFJqWlRXRlpxVTBaYWNGbHJaSE5oYTNoelZtdGtUbFpHV25OVmFrcHZWVzFHY1ZWcVJscGxhMVkyV2xjeGMyRXhWbFZpUmxwVFlsZG9ZVnBHYUVkT2JWRjNZa2hvVjFKWVVuZFdSM2hhWkRGV1NWVnNRbE5XTUd0NlYxZDBjbEJXU1Vvd2RubEhSeTFCTUdoU1dVcEtVMnN6YkMxTE9GSXdkbVYxVm1KdVQwVXdNVlZuVlZkT2JWb3RSMFJPYVd3M1UxZGxSbUZxY1UxZmIyUjVkbHBRYlVwVE5XbFdhbmQyY1hFek9WSjViMGxvTkZkUk1DNVNNRVpHWVZWS2RGUnVXbWxpVkVadldXMW9UVmxyUm5WWFdHeE5ZbXRKZUZkWE1UUmpSbXcxVGxaS1RtSldTVEpXVkVaclRVZFdkRk5zV2xSaWJrSlhWbTB4TkZVeFVuSlZiVVpPVm01Q1YxVXlkRTlXUmxwWllVVldWbVZyU25KVmFrRXhVMVpHY2xOc1drNVNiSEJUVm0xd1QxbFhVbGRpTTJoVFlsZG9VMVpxU205a1ZsWllaRWQwYVdKRk5WaFphMVpQVm0xS1ZXSkZWbFpoYTBwSVdrZDRjMVpzU25WU2JFcFhWbGhDU2xZeWNFTmpNV1J6VW14b2FGTkdjRk5VVldSVFVURmFSMXBGWkZKaVZWcEpWMnRWZUZVd01YUlZhM1JYVFZaYVZGVlVTa3BrTVZKeVlVWktWMkV4Y0haV1ZscHJZakpLYzFSdVNtbFRSVnBZV1cxMGQxUXhiRmRWYkdST1RWaENTRmRyVmpCaGF6RnlWMnhzVjFKdGFGaFdSRVpoWkVkV1NXTkdaRmRpVmtwSlZrWlNTMVF5VFhsVGFscFdZWHBzV0ZSWGVFdGlNVmw1VFZSU1ZFMXJXa2RVVmxaclZrZEtSbGRzV2xwV2VrVXdWMVphYzA1c1JsVlNiWEJwVWxoQ05sWkVSbGRaVjBWNVUyeHNWbFpGV2xkWmExcGhZMnh3U0dWRldteFNia0pHVmpJeGQyRkhSWGhqUnpsWFlXdGFWRlY2Ums1bFJscHpVMnhHVjFKRlNqTldNblJoVjIxT2RHTkZNVkJYUlRSNldrVldXazVXY0VWU1dGSnBZbFJXVVZRd1pHRlZiVXBZWVVSS1ZGSldjSGhXYTFaeVpFZFNSV0ZGY0dsaVZuQlJWMFJKZUZaVk1YUlplbEpxVjBoQ1JsVnJaRlpPUmxwRllrWlNhRTFXU2paWGJYaHZZbGRXY21KNlFsaFdWVEUyVjIxemQyVnNaRlpPV0VwVVZrZFNXVmRYYTNkT1ZrcHlWVzA1VDJGVVJreFVha2sxVWtWNGMxTllaRk5oTVhCdlZteFdkMDFHV2toT1YwWm9WakJ3VmxWdE1EVlhiVXBZVldwS1ZtRnJjRkJWTVZwUFpGWmtkRkpzVGxObGJXY3c
+declare -gx __EGL_VENDOR_LIBRARY_FILENAMES=/nix/store/0lfnrz6nq5myv787cih78knzaqy9z9fc-mesa-23.1.9-drivers/share/glvnd/egl_vendor.d/50_mesa.json
+declare -gx XDG_DATA_HOME=/home/runner/Hackathon-Website/.local/share
+declare -gx GIT_ASKPASS=replit-git-askpass
+declare -gx HOSTNAME=e6b301cc9105
+declare -gx LANG=en_US.UTF-8
+declare -gx DIRENV_CONFIG=/etc/direnv
+declare -gx REPLIT_PID1_VERSION=0.0.0-64bb781
+declare -gx REPLIT_NIX_CHANNEL=stable-23_11
+declare -gx REPLIT_BASHRC=/nix/store/p7awxwdwkaxb0k2svvhlg5d3xwbir5gq-replit-bashrc/bashrc
+declare -gx DOCKER_CONFIG=/home/runner/Hackathon-Website/.config/docker
+declare -gx REPLIT_CLI=/nix/store/vkliks0fg193gdxizgqmhycw95j027sy-pid1-0.0.1/bin/replit
+declare -gx REPLIT_DEV_DOMAIN=bcef1d27-e9c3-4554-88dd-0f79e55b7fab-00-8iyppgrcfl6c.worf.replit.dev
+declare -gx XDG_CACHE_HOME=/home/runner/Hackathon-Website/.cache
+declare -gx NODE_EXTRA_CA_CERTS=/etc/ssl/certs/ca-certificates.crt
+declare -gx REPL_PUBKEYS='{"crosis-ci":"7YlpcYh82oR9NSTtSYtR5jDL4onNzCGJGq6b+9CuZII=","crosis-ci:1":"7YlpcYh82oR9NSTtSYtR5jDL4onNzCGJGq6b+9CuZII=","crosis-ci:latest":"7YlpcYh82oR9NSTtSYtR5jDL4onNzCGJGq6b+9CuZII=","prod":"tGsjlu/BJvWTgvMaX7acuUb7AO1dXOrRiuk7y083RFE=","prod:1":"tGsjlu/BJvWTgvMaX7acuUb7AO1dXOrRiuk7y083RFE=","prod:2":"8uGN+vfszlnV93/HCSHlVLG0xddMlPkir1Ni4JKT4+w=","prod:3":"9+MCOSHQSQlcodXoot8dC8NLhc862nLkx1/VMsbY2h8=","prod:4":"8uGN+vfszlnV93/HCSHlVLG0xddMlPkir1Ni4JKT4+w=","prod:5":"9+MCOSHQSQlcodXoot8dC8NLhc862nLkx1/VMsbY2h8=","prod:latest":"tGsjlu/BJvWTgvMaX7acuUb7AO1dXOrRiuk7y083RFE=","vault-goval-token":"D5jJoMx1Ml54HM92NLgXl+MzptwDqbSsfyFG6f52g9E=","vault-goval-token:1":"D5jJoMx1Ml54HM92NLgXl+MzptwDqbSsfyFG6f52g9E=","vault-goval-token:latest":"D5jJoMx1Ml54HM92NLgXl+MzptwDqbSsfyFG6f52g9E="}'
+declare -gx REPLIT_RIPPKGS_INDICES=/nix/store/mfrw2kh7ppd5qmjwm5sj9c41lkh2hlij-rippkgs-indices
+declare -gx REPL_ID=bcef1d27-e9c3-4554-88dd-0f79e55b7fab
+declare -gx REPLIT_ENVIRONMENT=production
+declare -gx PROMPT_DIRTRIM=2
+declare -gx HOME=/home/runner
+declare -gx REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+declare -gx REPL_OWNER=AKSHITERUKULLA
+declare -gx REPLIT_PID1_FLAG_NIXMODULES_BEFORE_REPLIT_NIX=1
+declare -gx REPLIT_SUBCLUSTER=interactive
+declare -gx USER=runner
+declare -gx LOCALE_ARCHIVE=/usr/lib/locale/locale-archive
+declare -gx REPL_OWNER_ID=16800316
+declare -gx REPLIT_PID1_FLAG_REPLIT_RTLD_LOADER=1
+declare -gx REPLIT_RTLD_LOADER=1
+declare -gx NIXPKGS_ALLOW_UNFREE=1
+declare -gx DENO_TLS_CA_STORE=system
+declare -gx NIX_PATH=nixpkgs=/home/runner/.nix-defexpr/channels/nixpkgs-stable-23_11:/home/runner/.nix-defexpr/channels
+declare -gx REPL_IDENTITY_KEY=k2.secret.N-TNkTCB7Ax-Wj1xrnZ7f8uk35afgiggV_IX1Ef8t0BQXXl4aFCPi5zXfOJ1D1QWFi6rPAipMqI1XQ-04Rvtsg
+declare -gx REPL_LANGUAGE=html
+declare -gx REPL_HOME=/home/runner/Hackathon-Website
+declare -gx COLORTERM=truecolor
+declare -gx LIBGL_DRIVERS_PATH=/nix/store/0lfnrz6nq5myv787cih78knzaqy9z9fc-mesa-23.1.9-drivers/lib/dri
+declare -gx REPLIT_CLUSTER=worf
+declare -gx NIX_PS1='\[\033[01;34m\]\w\[\033[00m\]\$ '
+declare -gx REPLIT_DB_URL=https://kv.replit.com/v0/eyJhbGciOiJIUzUxMiIsImlzcyI6ImNvbm1hbiIsImtpZCI6InByb2Q6MSIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjb25tYW4iLCJleHAiOjE3MjU2MDUzMTYsImlhdCI6MTcyNTQ5MzcxNiwiZGF0YWJhc2VfaWQiOiJiY2VmMWQyNy1lOWMzLTQ1NTQtODhkZC0wZjc5ZTU1YjdmYWIifQ.V-ISSglbkNbemkGzbPWRH3DAe2qTTOIdr5HRYksNnL7YYjrNeR8k9no5Jccryt9z2cSpb4D_5ADNfq7uQ2jv3A
+declare -gx XDG_CONFIG_HOME=/home/runner/Hackathon-Website/.config
+read -r _new_path <<< "/nix/store/zrjvcj10w16j156damybcdvbdysmxhl6-pid1/bin:/nix/store/kf9qvd1cfmwlaa8b87p6zsn5w6wysqki-replit-runtime-path/bin:/home/runner/.nix-profile/bin:/home/runner/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+#PATH=/nix/store/zrjvcj10w16j156damybcdvbdysmxhl6-pid1/bin:/nix/store/kf9qvd1cfmwlaa8b87p6zsn5w6wysqki-replit-runtime-path/bin:/home/runner/.nix-profile/bin:/home/runner/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+if [ -e "/run/replit/env/last" ]; then read -r _last_path < <(\grep '^#PATH=' /run/replit/env/last | cut -f 2 -d =); fi
+_user_components="$(\tr : $'\n' <<< "${PATH:-}" |\grep -xv -f <(\tr : $'\n' <<< "${_last_path}") |\tr $'\n' :)"
+declare -gx PATH="${_user_components}${_new_path}"

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us - MHS RoCo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="join.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <img src="images/logo.png" alt="Logo" class="nav-logo">
+            <span class="nav-name">MHS RoCo</span>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <a href="#" class="subteams-link">Subteams</a>
+                    <div class="dropdown-content">
+                        <a href="software.html">Software Team</a>
+                        <a href="hardware.html">Hardware Team</a>
+                        <a href="outreach.html">Outreach Team</a>
+                    </div>
+                </div>
+                <a href="join.html" class="join-link">Join Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="join-us-section fade-element">
+        <h2>Why join us?</h2>
+        <p1 class='animated-text' data-text="Make an impact on the community by joining the team. Apply now."></p1>
+        <div class="reasons-top">
+            <div class="reason-box">
+                <img src="images/karate.png" alt="Skill Development" class="reason-image">
+                <div class="reason-text">Skill Development</div>
+                <div class="reason-details">
+                    <ul>
+                        <li>Hands-On Learning</li>
+                        <li>Tool Exposure</li>
+                        <li>Problem-Solving</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="reason-box">
+                <img src="images/people.png" alt="Networking" class="reason-image">
+                <div class="reason-text">Networking</div>
+                <div class="reason-details">
+                    <ul>
+                        <li>Peer Connections</li>
+                        <li>Mentorship</li>
+                        <li>Resume Builder</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="reason-box">
+                <img src="images/impact.png" alt="Community Impact" class="reason-image">
+                <div class="reason-text">Community Impact</div>
+                <div class="reason-details">
+                    <ul>
+                        <li>Meaningful Projects</li>
+                        <li>Inspire Change</li>
+                        <li>Leadership</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h1>How to join?</h1>
+        <p2 class='animated-text' data-text="We welcome everyone, because we support youth action and learning."></p2>
+
+        <div class="application-form-container">
+            <form class="application-form" action="#" method="POST">
+                <h3><a href="join.html" style="text-decoration: none; color: inherit;">Join Us</a></h3>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="subteam">Which subteam (<a href="software.html"
+                        style="text-decoration: underline; color: blue;">Software</a>,
+                    <a href="hardware.html" style="text-decoration: underline; color: blue;">Hardware</a>,
+                    <a href="outreach.html" style="text-decoration: underline; color: blue;">Outreach</a>) are you
+                    applying for?</label>
+                <input type="text" id="subteam" name="subteam" required>
+
+                <label for="score">For fun, play the game below and tell us your high score (the snake's
+                    length)!</label>
+                <input type="text" id="score" name="score" required>
+
+                <label for="message">Tell us about your ideas, reasons to join, and passion.</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <label for="vote" style="font-weight: bold; margin-bottom:20px;">Scroll below and vote for meeting times
+                    and competitions!</label>
+
+                <button type="submit" class="submit-button">Submit Application</button>
+            </form>
+        </div>
+
+        <div class="final-challenge">
+            <iframe src="game.html" style="border: 4px solid #0d0d0d; box-shadow: 2px 10px 18px lightblue;" width="520"
+                height="520" loading="lazy" id="link"></iframe>
+        </div>
+    </section>
+
+    <!-- Membership Fees Section -->
+    <section class="membership-fees fade-element">
+        <p>There aren't any mandatory MEMBERSHIP FEES, but some competitions,
+            may require fees for resources & entry.</p>
+    </section>
+
+    <!-- Meeting Times and Competitions Section -->
+    <section class="meeting-and-competitions fade-element">
+        <h2 class="center_title_text">Meeting & Competitions</h2>
+        <div class="meeting-times">
+            <h2>Choose the date-times most comfortable for you after school</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Votes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>3:00 PM</td>
+                        <td class="vote-cell">
+                            <span class="vote-count">12</span>
+                            <button class="vote-button" onclick="addVote(this)">+</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>3:30 PM</td>
+                        <td class="vote-cell">
+                            <span class="vote-count">14</span>
+                            <button class="vote-button" onclick="addVote(this)">+</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>4:00 PM</td>
+                        <td class="vote-cell">
+                            <span class="vote-count">11</span>
+                            <button class="vote-button" onclick="addVote(this)">+</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>3:15 PM</td>
+                        <td class="vote-cell">
+                            <span class="vote-count">13</span>
+                            <button class="vote-button" onclick="addVote(this)">+</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>3:45 PM</td>
+                        <td class="vote-cell">
+                            <span class="vote-count">15</span>
+                            <button class="vote-button" onclick="addVote(this)">+</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="meeting-times">
+            <h2>Choose the competitions you want to do this year</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Competition</th>
+                        <th>Date</th>
+                        <th>Votes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>WaterHacks</td>
+                        <td>Sep. 11</td>
+                        <td class="vote-cell">
+                            <span class="vote-count">12</span>
+                            <button class="vote-button" onclick="addVote(this)">+</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>FuturiFest x NASA</td>
+                        <td>Oct. 30</td>
+                        <td class="vote-cell">
+                            <span class="vote-count">14</span>
+                            <button class="vote-button" onclick="addVote(this)">+</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>VEX V5</td>
+                        <td>Dec. 27</td>
+                        <td class="vote-cell">
+                            <span class="vote-count">11</span>
+                            <button class="vote-button" onclick="addVote(this)">+</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Forest Hacks</td>
+                        <td>Nov. 19</td>
+                        <td class="vote-cell">
+                            <span class="vote-count">4</span>
+                            <button class="vote-button" onclick="addVote(this)">+</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>FIRST Robotics Competition</td>
+                        <td>Jan. 6</td>
+                        <td class="vote-cell">
+                            <span class="vote-count">14</span>
+                            <button class="vote-button" onclick="addVote(this)">+</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>Check out our social media!</p>
+        <div class="social-icons">
+            <a href="#" class="social-icon instagram"></a>
+            <a href="#" class="social-icon gmail"></a>
+            <a href="#" class="social-icon hands"></a>
+        </div>
+    </footer>
+
+    <script>
+        window.onscroll = function () {
+            var navbar = document.getElementById("navbar");
+            if (window.pageYOffset > 50) {
+                navbar.style.backgroundColor = "black";
+            } else {
+                navbar.style.backgroundColor = "transparent";
+            }
+        };
+        document.addEventListener("DOMContentLoaded", function () {
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            });
+
+            const elementsToFade = document.querySelectorAll('.fade-element');
+
+            elementsToFade.forEach(element => {
+                observer.observe(element);
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            galleryItems.forEach(item => {
+                item.addEventListener('click', function () {
+                    alert(`You clicked on ${this.querySelector('p').textContent}`);
+                });
+            });
+        });
+
+        let hasVoted = false;
+
+        function addVote(button) {
+            if (!hasVoted) {
+                const voteCount = button.previousElementSibling;
+                voteCount.textContent = parseInt(voteCount.textContent) + 1;
+                hasVoted = true;
+                disableAllButtons();
+            }
+        }
+
+        function disableAllButtons() {
+            const buttons = document.querySelectorAll('.vote-button');
+            buttons.forEach(btn => btn.disabled = true);
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const textElements = document.querySelectorAll(".animated-text");
+
+            textElements.forEach((element) => {
+                const text = element.getAttribute("data-text");
+                let delay = 0;
+
+                function startAnimation() {
+                    element.classList.remove("delay");
+                    element.textContent = text;
+                    element.style.width = "0";
+                    element.classList.add("typing");
+
+                    const animationDuration = 2.5 * 1000;
+                    const delayDuration = 2000;
+
+                    setTimeout(() => {
+                        element.classList.add("delay");
+                        setTimeout(startAnimation, delayDuration);
+                        element.classList.remove("typing");
+                    }, animationDuration);
+                }
+
+                startAnimation();
+            });
+        });
+    </script>
+
+</body>
+
+</html>
